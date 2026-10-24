@@ -1,0 +1,28 @@
+Sheet,Column,Unit,Description
+Points,Point_ID,–,System code and point number (e.g. ICL-06).
+Points,System,–,"NF, native forest; ICL, integrated crop–livestock system; MP, managed pasture."
+Points,Original code,–,"Field code used in the laboratory sheets (MN, ILP8, PM)."
+Points,Latitude / Longitude,decimal degrees,WGS 84; south and west negative. GNSS receiver.
+Points,E / N,m,SIRGAS 2000 / UTM zone 23S (EPSG:31983).
+Points,Influential POC point,yes/no,"Flagged by robust z-score |z| > 3.5 (median absolute deviation) within system, dry season, 0–100 mm."
+Samples,Sample_ID,–,System-point-layer-season.
+Samples,Season / Sampling date,–,dry = 2 July 2024 (ICL under pearl millet); wet = 1 April 2025 (soybean at R5–R6).
+Samples,Depth top / bottom,mm,"Layer limits: 0–100, 100–200, 200–300 mm."
+Samples,SOC,g kg⁻¹,"Soil organic carbon, wet oxidation with K₂Cr₂O₇ (Walkley & Black, 1934), corrected by the batch factor. Used in the article."
+Samples,POC,g kg⁻¹,"Particulate organic carbon, fraction > 53 µm after dispersion (Cambardella & Elliott, 1992), corrected; negative values set to zero."
+Samples,MAOC,g kg⁻¹,Mineral-associated organic carbon = SOC − POC of the same sample (formula).
+Samples,POC/SOC,%,100 × POC / SOC (formula).
+Samples,SOC / POC uncorrected,g kg⁻¹,"Values as originally computed from the titrations, before standardisation."
+Samples,Correction factor,–,"0.957 × 25 / Vbn, where Vbn is the unheated blank of the batch; 0.957 calibrates the reference soil."
+Samples,Processing note,–,"Corrections applied to the original laboratory sheet, and influential values."
+Covariates,"UAV_NDVI, UAV_NDRE, UAV_NDWI",–,"Indices from the UAV orthomosaic (MicaSense RedEdge-P, September 2024)."
+Covariates,"PS_NDVI, PS_NDRE, PS_NDWI",–,"Indices from PlanetScope surface reflectance (cloud-free bare-soil scenes, April–October 2024)."
+Covariates,S2_B2 … S2_B12,reflectance,"Sentinel-2 L2A bands, median 15 June–15 August 2024."
+Covariates,"S2_NDVI, NDRE, NDWI, NDMI, EVI, SAVI, BSI",–,"Sentinel-2 indices from the same composite; BSI, bare soil index."
+Covariates,S2wet_*,reflectance / –,Sentinel-2 bare-soil composite after the soybean harvest (15 May–31 August 2025; per-pixel maximum BSI); wet-season test.
+Covariates,"S2ts_NDVI_seca, S2ts_NDVI_chuva",–,Mean NDVI 2019–2024 in dry (June–October) and rainy (January–May) months.
+Covariates,S2ts_NDVI_dp,–,"Standard deviation of NDVI, 2019–2024."
+Covariates,S2ts_BSI_seca,–,"Mean dry-season BSI, 2019–2024."
+Covariates,S2ts_freq_solo_exposto,fraction,"Frequency of bare soil (NDVI < 0.25 and BSI > 0), 2019–2024."
+Covariates,"Elevation_m, Slope_deg, TPI_150m","m, °, m",Copernicus GLO-30 DEM; topographic position index in a 150 m radius.
+Covariates,"SG_clay_g_kg, SG_sand_g_kg",g kg⁻¹,"SoilGrids 2.0, mean 0–300 mm (Poggio et al., 2021)."

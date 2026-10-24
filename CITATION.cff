@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use these data or this code, please cite them as below and cite the associated article."
+title: "Data and code for: Between-system contrasts can inflate remote sensing accuracy for soil carbon: a call for within-field validation"
+type: dataset
+version: 1.0.0
+license: CC-BY-4.0
+# doi: "10.5281/zenodo.XXXXXXX"   # add after the GitHub release v1.0.0
+repository-code: "https://github.com/agrocarbon-ufma/soc-within-field-validation"
+authors:
+  - family-names: "Oliveira"
+    given-names: "Matheus Silva"
+    affiliation: "Federal University of Maranhão (UFMA), Chapadinha, Brazil"
+  - family-names: "Santos"
+    given-names: "Gustavo André de Araújo"
+    affiliation: "Federal University of Maranhão (UFMA), Chapadinha, Brazil"
+    email: "gustavo.andre@ufma.br"
+    orcid: "https://orcid.org/0000-0002-7922-9902"
+keywords:
+  - soil organic carbon
+  - particulate organic carbon
+  - remote sensing
+  - Sentinel-2
+  - model validation
+  - Cerrado

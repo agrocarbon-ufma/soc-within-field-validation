@@ -1,0 +1,33 @@
+{
+  "title": "Data and code for: Between-system contrasts can inflate remote sensing accuracy for soil carbon: a call for within-field validation",
+  "upload_type": "dataset",
+  "description": "Soil organic carbon (SOC), particulate (POC) and mineral-associated (MAOC) organic carbon at 60 points (20 per system: native forest, integrated crop–livestock system and managed pasture) and three layers (0–100, 100–200 and 200–300 mm), sampled in the dry (2 July 2024) and wet (1 April 2025) seasons at Fazenda Barbosa, Brejo, Maranhão, Brazil, with UAV, PlanetScope, Sentinel-2, terrain and texture covariates, and the Jupyter notebook that reproduces the analyses of the manuscript by Oliveira et al. (submitted to Precision Agriculture). Data are released under CC BY 4.0 and code under the MIT licence.",
+  "creators": [
+    {
+      "name": "Oliveira, Matheus Silva",
+      "affiliation": "Federal University of Maranhão (UFMA)"
+    },
+    {
+      "name": "Santos, Gustavo André de Araújo",
+      "affiliation": "Federal University of Maranhão (UFMA)",
+      "orcid": "0000-0002-7922-9902"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "soil organic carbon",
+    "particulate organic carbon",
+    "mineral-associated organic carbon",
+    "remote sensing",
+    "Sentinel-2",
+    "PlanetScope",
+    "unmanned aerial vehicle",
+    "model validation",
+    "integrated crop–livestock system",
+    "Cerrado"
+  ],
+  "language": "eng",
+  "version": "1.0.0",
+  "notes": "Funding: CAPES (Finance Code 001); FAPEMA (CARBOSCAN, APP-05024/23); CNPq (SpectralCarbon, 405484/2023); EMAP and Port of Itaqui; Embrapa.",
+  "access_right": "open"
+}
